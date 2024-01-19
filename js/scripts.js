@@ -5,7 +5,7 @@ const multiplicationInput = document.querySelector("#multiplicator");
 
 const multiplicationTitle = document.querySelector("#multiplication-title span");
 
-const multiplicationTable = document.querySelector("#multiplication-operations");
+const multiplicationTable = document.querySelector("#multiplication-table");
 
 //Funções
 
@@ -15,10 +15,10 @@ const createTable = (number, multiplicatorNumber) => {
     for (i = 1; i <= multiplicatorNumber; i++) {
         const result = number * i;
 
-        const template = `<div class = "row">
-            <div class = "operation">${number} x ${i} = </div>
-            <div class = "result">${result}</div>
-            </div>`;
+        const template = `<div class="row">
+            <div class="operation">${number} x ${i} =</div>
+            <div class="result">${result}</div>
+        </div>`;
 
         const parser = new DOMParser();
 
@@ -38,8 +38,8 @@ multiplicationForm.addEventListener("submit", (e) => {
     const multiplicationNumber = +numberInput.value;
 
     const multiplicatorNumber = +multiplicationInput.value;
-        if(!multiplicationNumber || !multiplicatorNumber) return;
+    if(!multiplicationNumber || !multiplicatorNumber) return;
 
-    console.log(multiplicationNumber, multiplicatorNumber);
+    createTable(multiplicationNumber, multiplicatorNumber);
 
-})
+});

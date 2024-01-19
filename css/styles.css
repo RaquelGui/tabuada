@@ -57,7 +57,7 @@ h2 {
     text-align: center;
 }
 
-#multiplication-form input[type="submit"] {
+#multiplication-form input[type="submit"]{
     max-height: 50px;
     padding: 0.6rem 1.2rem;
     width: 200px;
@@ -90,7 +90,7 @@ h2 {
     width: 150px;
 }
 
-#multiplication-operations row:last-child {
+#multiplication-operations .row:last-child{
     border-bottom: 1px solid #ccc;  
 }
 
