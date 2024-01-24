@@ -5,9 +5,9 @@ Projeto desenvolvido em curso de formação frontend.
 
 ## Stack utilizada
 
-HTML 
-CSS
-JavaScript
+- HTML 
+- CSS
+- JavaScript
 
 ## Funcionalidades
 
